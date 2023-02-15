@@ -1,0 +1,13 @@
+.container {
+  background: rgb(22, 78, 228);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 78, 228, 0.8015406846332283) 5%,
+    rgba(27, 181, 212, 1) 86%
+  );
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 8px;
+  padding: 16px;
+  border-radius: 4px;
+  min-height: 400px;
+}

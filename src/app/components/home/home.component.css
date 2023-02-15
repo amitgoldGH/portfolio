@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.home-buttons-container {
+  display: inline;
+}
+
+.download-cv-button {
+  border-radius: 0.3rem;
+  background-color: white;
+}
+
+.strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

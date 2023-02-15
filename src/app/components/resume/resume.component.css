@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+  min-height: 120px;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.header-image {
+  /* background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg"); */
+  background-size: cover;
+}
+
+mat-card img {
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 35%;
+}
+
+mat-card-content {
+  text-align: left;
+  white-space: pre-line;
+}
+
+mat-card-footer {
+  margin-top: 0.5rem;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}

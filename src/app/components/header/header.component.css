@@ -1,0 +1,9 @@
+.header-container {
+  background-color: rgb(65, 209, 209);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 8px;
+}
+
+.icon-img-class {
+  height: 50%;
+  width: 30px;
+}
