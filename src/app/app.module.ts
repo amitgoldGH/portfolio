@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContentComponent } from './components/content/content.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -23,7 +22,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent,
     HomeComponent,
     ResumeComponent,
     ProjectsComponent,
