@@ -61,7 +61,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy App Service'
             inputs:
-              azureSubscription: 'Azure subscription 1'
+              azureSubscription: 'MyResourceManagerSubscription'
               appType: 'webAppLinux'
               appName: 'amit-goldshtein-cv'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
