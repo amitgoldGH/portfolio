@@ -7,9 +7,9 @@
   height: 50%;
   width: 30px;
 }
-:host ::ng-deep .p-menubar {
-  position: sticky;
-  position: -webkit-sticky; 
+p-menubar {
+  position: fixed;
   z-index: 10000; 
+  width: 100%;
   top: 0; 
 }
