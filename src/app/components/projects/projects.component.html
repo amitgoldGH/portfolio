@@ -1,26 +1,24 @@
-<div class="container-fluid">
-  <swiper
-    [slidesPerView]="1"
-    [spaceBetween]="10"
-    [navigation]="true"
-    [pagination]="{ clickable: true }"
-  >
-    <ng-template swiperSlide *ngFor="let project of projects">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>{{ project.title }}</mat-card-title>
-          <mat-card-subtitle
-            >{{ project.description }}
-            <a href="{{ project.github }}" target="_blank"
-              ><button mat-button>GITHUB</button></a
-            >
-          </mat-card-subtitle>
-        </mat-card-header>
+<div class="strokeme mt-5 text-base-content font-bold pt-10 ml-10 text-7xl text-center">Projects</div>
 
-        <span class="image-container">
-          <img mat-card-image src="{{ project.posterUrl }}" />
-        </span>
-      </mat-card>
-    </ng-template>
-  </swiper>
+<div class="grid overflow-auto project-card-container-grid">
+  <div *ngFor="let project of projects" class="m-2 xl:col-4 lg:col-5 md:col-12 sm:col-12 " >
+    <p-card header="{{project.title}}">
+      <ng-template pTemplate="subtitle">
+        <div class="poster-class">
+
+          <img src="{{project.posterUrl}}">
+        </div>
+        
+        <a href="{{project.github}}" target="_blank">
+        <br><br>
+        <button pButton type="button" label="Github" icon="pi pi-github" class="p-button-rounded p-button"></button>
+      </a>
+      </ng-template>
+      <div class="description">{{project.description}}</div> 
+
+      <ng-template pTemplate="footer">
+        <span *ngFor="let skill of project.skills" class="skill-item">{{skill}}</span>
+      </ng-template>
+    </p-card>
+  </div>
 </div>
