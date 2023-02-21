@@ -4,12 +4,13 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
+.home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 400px;
   text-align: center;
+  padding-top: 64px;
 }
 
 .home-buttons-container {

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import { MenubarSub } from 'primeng/menubar';
 import { Finals } from 'src/assets/finals/finals';
+import { ViewportScroller } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
@@ -17,21 +20,26 @@ export class HeaderComponent implements OnInit {
   }
 
   
-  // TODO: FIX Prime menubar routing
-
+  constructor(private vs: ViewportScroller) {}
+  scroll(el: any) {
+    // el is HTML element's id
+    this.vs.scrollToAnchor(el);
+  }
   ngOnInit() {
 
     this.items = [
       {
-        label: Finals.routing.title.home, routerLink: Finals.routing.route.home,
+        label: Finals.routing.title.home, command: () => this.scroll(Finals.routing.route.home) ,
       },
       {
-        label: Finals.routing.title.resume, routerLink: Finals.routing.route.resume,
+        label: Finals.routing.title.resume, command: () => this.scroll(Finals.routing.route.resume),
       },
       {
-        label: Finals.routing.title.projects, routerLink: Finals.routing.route.projects,
+        label: Finals.routing.title.projects, command: () => this.scroll(Finals.routing.route.projects),
       },
       
     ];
   }
+
+  
 }
