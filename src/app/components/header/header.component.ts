@@ -16,10 +16,6 @@ export class HeaderComponent implements OnInit {
     linkedin: Finals.urls.linkedin
   }
 
-  images = {
-    github: Finals.images.github,
-    linkedin: Finals.images.linkedin,
-  }
   
   // TODO: FIX Prime menubar routing
 
