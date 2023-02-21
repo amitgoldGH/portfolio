@@ -1,28 +1,25 @@
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-
 <div class="container">
-  <h1 class="opensans strokeme">Amit Goldshtein</h1>
-  <p class="opensans strokeme">
+  <div class="strokeme text-base-content font-bold pt-10 ml-10 text-7xl text-center">
+    Amit Goldshtein
+  </div>
+
+  <p class="strokeme font-bold text-large text-base-content">
     Software engineering graduate from Afeka college.
   </p>
   <div class="home-buttons-container mt-4">
-    <a href="#" target="_blank">
+    <a href={{links.resumedl}} target="_blank">
       <!-- UPDATE WITH DOWNLOAD LINK FOR RESUME-->
-      <button class="download-cv-button" type="button">
-        <i class="fa fa-download"></i> Resume
+      <button pButton type="button" label="Resume" class="m-2 p-button-rounded p-button p-button-secondary">
+        <i class="pi pi-download mr-2"></i>
       </button>
     </a>
-    <a href="https://github.com/amitgoldGH" target="_blank">
-      <button class="download-cv-button" type="button">
-        <i class="fa fa-github"></i> Github
+    <a href={{links.github}} target="_blank">
+      <button pButton type="button" icon="pi pi-github" class="m-2 p-button-rounded p-button p-button-icon-only p-button-secondary">
       </button>
+ 
     </a>
-    <a href="https://www.linkedin.com/in/amit-goldshtein/" target="_blank">
-      <button class="download-cv-button" type="button">
-        <i class="fa fa-brands fa-linkedin"></i> Linkedin
+    <a href={{links.linkedin}} target="_blank">
+      <button pButton type="button" icon="pi pi-linkedin" class="m-2 p-button-rounded p-button p-button-icon-only p-button-secondary">
       </button>
     </a>
   </div>

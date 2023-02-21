@@ -1,8 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "swiper/css/bundle";
-@import "swiper/less";
-@import "swiper/less/navigation";
-@import "swiper/less/pagination";
 
 html,
 body {
@@ -11,4 +7,12 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.strokeme {
+  color: rgb(59, 59, 59);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px rgb(255, 255, 255),
+    1px 1px 0 #ffffff;
 }

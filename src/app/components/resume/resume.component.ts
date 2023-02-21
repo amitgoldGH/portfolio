@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Finals } from 'src/assets/finals/finals';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
@@ -12,9 +12,9 @@ export class ResumeComponent {
       title: 'B.Sc Software Engineering',
       location: 'Afeka College, Tel-aviv',
       description:
-        'Bachelor degree in software engineering.\nSoftware information technologies specialization.',
+        'Bachelor degree in software engineering.\nMajor in Software information technologies.',
       years: '2017-2022',
-      iconLocation: '../../../assets/afekalogo.png',
+      iconLocation: Finals.images.afekalogo,
     },
     {
       itemId: 2,
@@ -22,7 +22,7 @@ export class ResumeComponent {
       location: 'Sela College, Bnei brak',
       description: 'A year-long course in cyber security.',
       years: '2013-2014',
-      iconLocation: '../../../assets/sela-logo-black.svg',
+      iconLocation: Finals.images.selalogo,
     },
   ];
 }

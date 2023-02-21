@@ -7,3 +7,9 @@
   height: 50%;
   width: 30px;
 }
+:host ::ng-deep .p-menubar {
+  position: sticky;
+  position: -webkit-sticky; 
+  z-index: 10000; 
+  top: 0; 
+}

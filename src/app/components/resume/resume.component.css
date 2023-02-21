@@ -4,41 +4,39 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
+.resume-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 400px;
+  width: 100%;
   text-align: center;
 }
 
 .card {
-  max-width: 500px;
+  max-width: 400px;
   min-height: 120px;
   margin: auto;
   margin-top: 3rem;
 }
 
-.header-image {
-  /* background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg"); */
-  background-size: cover;
+p-card {
+  width: 80%;
 }
 
-mat-card img {
-  object-fit: cover; /*this makes the image in src fit to the size specified below*/
-  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+p-card img {
+  /*object-fit: cover; *//*this makes the image in src fit to the size specified below*/
+  width: 30%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
   height: 35%;
 }
 
-mat-card-content {
+p-card p {
   text-align: left;
   white-space: pre-line;
 }
 
-mat-card-footer {
-  margin-top: 0.5rem;
-}
-
-mat-card-subtitle {
+.description {
+  display: inline-block;
   text-align: left;
+  
 }
