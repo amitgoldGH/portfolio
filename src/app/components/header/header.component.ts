@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MenuItem} from 'primeng/api';
+import { Finals } from 'src/assets/finals/finals';
 
 @Component({
   selector: 'app-header',
@@ -6,14 +8,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  linkItems = [
-    { linkId: 1, linkName: 'Home', linkUrl: 'home' },
-    { linkId: 2, linkName: 'Resume', linkUrl: 'resume' },
-    { linkId: 3, linkName: 'Projects', linkUrl: 'projects' },
-    { linkId: 4, linkName: 'Contact', linkUrl: 'contact' },
-  ];
 
-  constructor() {}
+  items: MenuItem[] = [];
+  
+  links = {
+    github: Finals.urls.githubMain,
+    linkedin: Finals.urls.linkedin
+  }
 
-  ngOnInit(): void {}
+  images = {
+    github: Finals.images.github,
+    linkedin: Finals.images.linkedin,
+  }
+  
+  // TODO: FIX Prime menubar routing
+
+  ngOnInit() {
+
+    this.items = [
+      {
+        label: Finals.routing.title.home, routerLink: Finals.routing.route.home,
+      },
+      {
+        label: Finals.routing.title.resume, routerLink: Finals.routing.route.resume,
+      },
+      {
+        label: Finals.routing.title.projects, routerLink: Finals.routing.route.projects,
+      },
+      
+    ];
+  }
 }
