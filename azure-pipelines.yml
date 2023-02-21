@@ -23,6 +23,7 @@ stages:
         displayName: 'Install Node.js 16.x'
 
       - script: |
+          cd portfolio/
           npm install -g @angular/cli
           npm install
           ng build
