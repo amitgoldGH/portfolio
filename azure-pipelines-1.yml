@@ -21,8 +21,15 @@ steps:
     ng build --configuration production
   displayName: 'npm install and build'
 
-- powershell: |
-    Get-ChildItem -Path 'Insert root path' -recurse
+- script: |
+      echo "Structure of work folder of this pipeline:"
+      tree $(Agent.WorkFolder)\1 /f
+      echo "Build.ArtifactStagingDirectory:" 
+      echo "$(Build.ArtifactStagingDirectory)"
+      echo "Build.BinariesDirectory:" 
+      echo "$(Build.BinariesDirectory)"
+      echo "Build.SourcesDirectory:"
+      echo "$(Build.SourcesDirectory)"
   displayName: 'folder structure'
 
 # - task: ArchiveFiles@2
