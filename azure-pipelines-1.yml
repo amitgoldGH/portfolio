@@ -36,7 +36,7 @@ steps:
       echo "Structure of work folder of this pipeline:"
       tree $(Agent.WorkFolder)/1
       echo "Build.ArtifactStagingDirectory:" 
-      echo "
+      echo "$(Build.ArtifactStagingDirectory)"
       echo "Build.BinariesDirectory:" 
       echo "$(Build.BinariesDirectory)"
       echo "Build.SourcesDirectory:"
