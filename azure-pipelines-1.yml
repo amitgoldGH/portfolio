@@ -41,6 +41,8 @@ steps:
       echo "$(Build.BinariesDirectory)"
       echo "Build.SourcesDirectory:"
       echo "$(Build.SourcesDirectory)"
+      echo "Build ID: "
+      echo "$(Build.BuildId)"
   displayName: 'folder structure'
 
 - task: AzureWebApp@1
