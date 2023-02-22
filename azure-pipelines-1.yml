@@ -21,6 +21,23 @@ steps:
     ng build --configuration production
   displayName: 'npm install and build'
 
+
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)/dist/portfolio'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+# - task: AzureWebApp@1
+#   inputs:
+#     azureSubscription: 'Azure subscription 1(c9ea8d65-e554-42b9-a500-7bc949e15c32)'
+#     appType: 'webAppLinux'
+#     appName: 'amit-goldshtein-cv'
+#     package: '$(Build.ArtifactStagingDirectory)/*.zip'
+#     runtimeStack: 'NODE|16-lts'
+
 - script: |
       echo "Structure of work folder of this pipeline:"
       tree $(Agent.WorkFolder)/1
@@ -31,18 +48,3 @@ steps:
       echo "Build.SourcesDirectory:"
       echo "$(Build.SourcesDirectory)"
   displayName: 'folder structure'
-
-# - task: ArchiveFiles@2
-#   inputs:
-#     rootFolderOrFile: '$(Build.BinariesDirectory)'
-#     includeRootFolder: true
-#     archiveType: 'zip'
-#     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-#     replaceExistingArchive: true
-# - task: AzureWebApp@1
-#   inputs:
-#     azureSubscription: 'Azure subscription 1(c9ea8d65-e554-42b9-a500-7bc949e15c32)'
-#     appType: 'webAppLinux'
-#     appName: 'amit-goldshtein-cv'
-#     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-#     runtimeStack: 'NODE|16-lts'
