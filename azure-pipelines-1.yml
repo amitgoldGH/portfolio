@@ -19,7 +19,7 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --configuration production
-    echo $Agent.BuildDirectory
+    log ls -al
   displayName: 'npm install and build'
 
 # - task: ArchiveFiles@2
