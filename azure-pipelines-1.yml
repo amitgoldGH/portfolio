@@ -31,14 +31,7 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'MyResourceManagerSubscription'
-    appType: 'webAppLinux'
-    appName: 'amit-goldshtein-cv'
-    package: '$(Build.ArtifactStagingDirectory)/*.zip'
-    runtimeStack: 'NODE|16-lts'
-    
+
 - script: |
       echo "Structure of work folder of this pipeline:"
       tree $(Agent.WorkFolder)/1
@@ -49,3 +42,12 @@ steps:
       echo "Build.SourcesDirectory:"
       echo "$(Build.SourcesDirectory)"
   displayName: 'folder structure'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'MyResourceManagerSubscription'
+    appType: 'webAppLinux'
+    appName: 'amit-goldshtein-cv'
+    package: '$(Build.ArtifactStagingDirectory)/*.zip'
+    runtimeStack: 'NODE|16-lts'
+    
