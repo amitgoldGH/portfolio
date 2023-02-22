@@ -50,6 +50,6 @@ steps:
     azureSubscription: 'MyResourceManagerSubscription'
     appType: 'webAppLinux'
     appName: 'amit-goldshtein-cv'
-    package: '$(Build.ArtifactStagingDirectory)/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     runtimeStack: 'NODE|16-lts'
     
