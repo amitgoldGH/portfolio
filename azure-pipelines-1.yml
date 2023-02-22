@@ -19,8 +19,11 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --configuration production
-    echo ls -al
   displayName: 'npm install and build'
+
+- powershell: |
+    Get-ChildItem -Path 'Insert root path' -recurse
+  displayName: 'folder structure'
 
 # - task: ArchiveFiles@2
 #   inputs:
