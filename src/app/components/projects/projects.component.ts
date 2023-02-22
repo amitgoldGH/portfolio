@@ -28,7 +28,7 @@ export class ProjectsComponent {
         'Written with Angular & PrimeNG, Deployed to Azure, no backend.',
       posterUrl: Finals.images.resumeposter,
       github: Finals.urls.portfolio,
-      skills: ['Javascript','Angular','PrimeNG','Azure(Devops/CI-CD)'],
+      skills: ['Javascript','Angular','PrimeNG'],
     },
   ]
 
