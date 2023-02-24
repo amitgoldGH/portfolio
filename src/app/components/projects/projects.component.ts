@@ -30,6 +30,22 @@ export class ProjectsComponent {
       github: Finals.urls.portfolio,
       skills: ['Javascript','Angular','PrimeNG'],
     },
+    {
+      title: "MetaVerse Project",
+      description:
+        "A single-player game web app connected to mongodb database project, frontend written with ReactJS, Backend written with NodeJS Express & Mongoose. (Course project)",
+        posterUrl: Finals.images.metaverseposter,
+        github: Finals.urls.metaversegithub,
+        skills: ['Javascript','ReactJS','Redux','NodeJS','Express','Mongoose','MongoDB','REST-API'],
+    },
+    {
+      title: "Parallel Computing XOR decoder",
+      description:
+        "Written in C, makes use of MPI and OpenMP to create multiple processes, each one having multiple threads in order to try and decode a XOR encrypted text using bruteforce dictionary attack.",
+        posterUrl: Finals.images.parallelbruteforceposter,
+        github: Finals.urls.parallelgithub,
+        skills: ['C','MPI', 'OpenMP', 'Multi-threading'],
+    }
   ]
 
   
