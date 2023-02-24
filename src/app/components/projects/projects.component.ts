@@ -19,7 +19,7 @@ export class ProjectsComponent {
       description:
         "A server-client project. mobile application client written in react-native. spring-boot server provides REST API, connected to mongodb.",
       posterUrl: Finals.images.manikinposter,
-      github: Finals.urls.manikinFront,
+      github: Finals.urls.manikingithub,
       skills: ['Java','Spring-boot','Javascript','React-native','BLE','MongoDB','REST-API'],
     },
     {

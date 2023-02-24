@@ -2,7 +2,7 @@ export const Finals = {
     urls: {
         githubMain: "https://github.com/amitgoldGH",
         linkedin: "https://www.linkedin.com/in/amit-goldshtein/",
-        manikinFront: "https://github.com/amitgoldGH/CPR-FE-BLEProject",
+        manikingithub: "https://github.com/amitgoldGH/CPR-Convert-Manikins-Full",
         metaversegithub: "https://github.com/amitgoldGH/metaverse-course-project",
         parallelgithub: "https://github.com/amitgoldGH/Parallel-Computing-Encode-Decode",
         portfolio: "https://github.com/amitgoldGH/portfolio",
