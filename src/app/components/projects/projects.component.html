@@ -1,15 +1,15 @@
 <div class="strokeme mt-5 text-base-content font-bold pt-10 ml-10 text-7xl text-center">Projects</div>
 
 <div class="grid overflow-auto project-card-container-grid">
-  <div *ngFor="let project of projects" class="xl:col-4 lg:col-5 md:col-12 sm:col-12 " >
-    <p-card header="{{project.title}}">
+  <div *ngFor="let project of projects" class="m-1 xl:col-5 lg:col-5 md:col-12 sm:col-12 " >
+    <p-card [header]="project.title">
       <ng-template pTemplate="subtitle">
         <div class="poster-class">
 
-          <img src="{{project.posterUrl}}">
+          <img [src]="project.posterUrl">
         </div>
         
-        <a href="{{project.github}}" target="_blank">
+        <a [href]="project.github" target="_blank">
         <br><br>
         <button pButton type="button" label="Github" icon="pi pi-github" class="p-button-rounded p-button"></button>
       </a>
